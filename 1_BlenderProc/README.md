@@ -4,5 +4,7 @@ Training a neural network requires a large amount of data. The chosen algorithm,
 1) Installation of BlenderProc and BOP toolkit 
 2) Usage of BlenderProc
 3) Implentation in Thesis 
-  3.1) Implentation cutom object
-  3.2) Scripts 
+  1) Implentation cutom object
+  2) Scripts 
+  3) Graphical User Interface
+  4) Output data
