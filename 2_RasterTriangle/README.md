@@ -10,6 +10,8 @@
 
 # *Rendered* data
 
+**Note:** the poses are saved per object in a pkl file. This contains 70,000 poses and this for each object separately. This means that it is possible to generate the same images each time but the number is also limited to the amount in the .pkl-files.
+
 # *Fused* data
 
 # Change to RasterTriangle
