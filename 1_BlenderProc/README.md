@@ -17,10 +17,13 @@ Examples: script 1 (view 3) - script 2 - script 3
 4. Scripts + Graphical User Interface
 
 # Installation of BlenderProc and BOP toolkit
+Installation tutorial:
 
 ## Setup
+Organize the dataset with object model (.obj or .ply files) in the following way. 
 
 # Usage of BlenderProc
+More information about BlenderProc can be found on their [github]([https://www.google.com](https://github.com/DLR-RM/BlenderProc))
 
 <img src="images/example_rgb.png" width="300"> <img src="images/example_depth.png" width="300">
 
