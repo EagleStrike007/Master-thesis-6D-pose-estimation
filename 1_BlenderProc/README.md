@@ -22,6 +22,9 @@ Examples: script 1 (view 3) - script 2 - script 3
 
 # Usage of BlenderProc
 
+<img src="images/example_rgb.png" width="300"> <img src="images/example_depth.png" width="300">
+
+<img src="images/example_mask_1.png" width="300"> <img src="images/example_mask_2.png" width="300">
 # Implementation custom object
 
 # Scripts + Graphical User Interface
