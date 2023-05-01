@@ -12,22 +12,26 @@ Examples: script 1 (view 3) - script 2 - script 3
 
 # Table of contents 
 1. Installation of BlenderProc and BOP toolkit 
-2. Usage of BlenderProc
-3. Implementation custom object
+2. Implementation custom object
+3. Usage of BlenderProc
 4. Scripts + Graphical User Interface
 
 # Installation of BlenderProc and BOP toolkit
 Installation tutorial:
 
+## Quickstart
+It is possible to test the installation by using BlenderProc's Quickstart. 
+
 ## Setup
 Organize the dataset with object model (.obj or .ply files) in the following way. 
 
+# Implementation custom object
+
 # Usage of BlenderProc
-More information about BlenderProc can be found on their [github]([https://www.google.com](https://github.com/DLR-RM/BlenderProc))
+BlenderProc should generate RGB, depth and mask images as output data along with ground-truth annotations. The main functions are briefly discussed below for more information about BlenderProc see their [github](https://github.com/DLR-RM/BlenderProc) or [documentation website](https://dlr-rm.github.io/BlenderProc/). 
 
 <img src="images/example_rgb.png" width="300"> <img src="images/example_depth.png" width="300">
 
 <img src="images/example_mask_1.png" width="300"> <img src="images/example_mask_2.png" width="300">
-# Implementation custom object
 
 # Scripts + Graphical User Interface
