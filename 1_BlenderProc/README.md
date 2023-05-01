@@ -6,13 +6,13 @@ A total of three BlenderProc scipts were created:
 2. Script with objects in a boxed space with a moving camera and moving objects 
 3. Script with "*flying*" objects and a stationary camera 
 
+<img src="images/example_2_1.png" width="200">
+
 # Table of contents 
 1. Installation of BlenderProc and BOP toolkit 
 2. Usage of BlenderProc
 3. Implementation custom object
 4. Scripts + Graphical User Interface
-
-<img src="images/example_2_1.png">
 
 # Installation of BlenderProc and BOP toolkit
 
