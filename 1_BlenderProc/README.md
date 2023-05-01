@@ -12,6 +12,8 @@ A total of three BlenderProc scipts were created:
 3. Implementation custom object
 4. Scripts + Graphical User Interface
 
+<img src="images/example_2_1.png">
+
 # Installation of BlenderProc and BOP toolkit
 
 # Usage of BlenderProc
