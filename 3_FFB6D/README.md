@@ -10,11 +10,11 @@ After a literature study around 6D object pose estimation algorithms and challen
 
 # Usage
 
-<img src="images/FFB6D_structure_overview.png" width="300"> 
+<img src="images/FFB6D_structure_overview.PNG" width="500"> 
 
-<img src="images/FFB6D_6D_pose_estimation_overview.png" width="300">
+<img src="images/FFB6D_6D_pose_estimation_overview.PNG" width="500">
 
-<img src="images/FFB6D_example_normalmap_rgb.png" width="300"> <img src="images/FFB6D_example_normalmap_n.png" width="300">
+<img src="images/FFB6D_example_normalmap_rgb.PNG" width="300"> <img src="images/FFB6D_example_normalmap_n.PNG" width="300">
 
 # Implementation of Custom object
 
