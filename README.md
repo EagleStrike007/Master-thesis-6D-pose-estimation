@@ -1,5 +1,5 @@
 # 6D Object Pose Estimation Using Synthetic Training Data and Deep Learning: Evaluation on Real RGBD Data
-This thesis was written to graduate from the joint program Industrial Engineering Technology offered by KU Leuven and UHasselt. The thesis was carried out in collaboration with KU Leuven research group [ARCO](https://iiw.kuleuven.be/onderzoek/acro).
+This thesis was written to graduate from the joint program Industrial Engineering Technology offered by KU Leuven and UHasselt. The thesis was carried out in collaboration with KU Leuven research group [ACRO](https://iiw.kuleuven.be/onderzoek/acro).
 
 <p align="center">
  <img src="images/uhasselt_kuleuven.png" width="600">
