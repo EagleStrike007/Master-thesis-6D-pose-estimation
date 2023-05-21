@@ -25,6 +25,10 @@ This repository is split into different folders to provide the most important sc
 4. Ground truth annotations and RealSense data capture script
 
 # Results
+Two real datasets were recorded and annotated. The two real datasets are:
+<br>Dataset 1: static images of the driller and distractor objects (occluded + non-occluded scenes)
+<br>Dataset 2: movie where the driller is moved across the field of view
+
 
 <p align="center">
  <img src="images/example_1.jpg" width="300"> <img src="images/example_2.jpg" width="300">
