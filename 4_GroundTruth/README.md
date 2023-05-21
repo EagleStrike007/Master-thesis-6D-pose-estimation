@@ -45,6 +45,17 @@ The first workflow uses the markers and the ICP algorithm. This involves placing
 The second workflow only uses the ICP algorithm. For this workflow, the object and/or camera may move relative to each other. This workflow is to be applied to a video where the object or camera is moved. For the first frame, the object's pose relative to the camera is determined using ICP. The input pose for the next frame is then set equal to the pose of the object in the previous frame. For each frame, the pose is refined by applying the ICP algorithm.
 
 In this approach the RGB information is used only to annotate the first frame. For the next frames only the respective depth image is used to apply the ICP algorithm. It should be noted that the difference in pose between two successive images should not be too great as the algorithm uses the previous image as a starting point. The reason is that only points (of the point cloud of the scene) are considered that are within a certain distance threshold from the point cloud of the projected object. This projected object initially has the pose of the previous scene. This distance threshold is iteratively reduced to refine the pose. However, it cannot be set too large to avoid incorrect poses. When the relative distance between two successive scenes is small, the algorithm can easily find the object. The speed at which the object is allowed to move relative to the camera depends on the camera’s frame rate. However, with fast moving objects there can be a second problem, namely motion blur. This can partially be solved by increasing the frame rate. However, this also depends on the type of shutter. A rolling shutter is more sensitive to motion blur than a global shutter.
+The following image shows an example of an annotated frame using this method.
+<p align="center">
+ <img src="images/example_method_2.png" width="500">
+</p>
 
 # Result
+Two real datasets were recorded and annotated. The two real datasets are:
+Dataset 1: static images of the driller and distractor objects (occluded + non-occluded scenes), annotated using method 1
+Dataset 2: movie where the driller is moved across the field of view, annotated using method 2
+The images below give some more examples of the images included in these datasets.
+<br>
+## Examples Dataset 1
 
+## Examples dataset 2
