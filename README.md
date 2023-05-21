@@ -21,7 +21,7 @@ The course of the thesis can be divided into 6 major parts:
 2. search and implement suitable synthetic data generation tool(s)
 3. implement the chosen algorithm and verify its working principle
 4. train the selected algorithm on synthetic data for the real object
-5. create a real dataset, of the driller, which includes ground truth information
+5. create a real dataset, of a custom object, which includes ground truth information
 6. evaluate the performance of the algorithm on the real dataset
 
  # Used software
