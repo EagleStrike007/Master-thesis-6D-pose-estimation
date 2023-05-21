@@ -146,11 +146,11 @@ sudo apt install python3-tk
 ```
 
  ## 10. Compilation of RandLA-Net operators
-To compile the RandLa-Net operators, first the directory to the Python site-packages (PYTHONPATH) should be exported. In our case the Python site packages were in the following directory: /home/sander/anaconda3/envs/ffb6d/lib/python3.7/site-packages/
+To compile the RandLa-Net operators, first the directory to the Python site-packages (PYTHONPATH) should be exported. In our case the Python site packages were in the following directory: /home/user/anaconda3/envs/ffb6d/lib/python3.7/site-packages/
 
 To export the PYTHONPATH enter the following command:
 ```
-export PYTHONPATH="/home/sander/anaconda3/envs/ffb6d/lib/python3.7/site-packages/
+export PYTHONPATH="/home/user/anaconda3/envs/ffb6d/lib/python3.7/site-packages/
 ```
 Next, change the active directory to the RandLA-directory by entering: ``` cd ffb6d/models/RandLA/ ```
 Next enter the following command to compile the RandLa operators: ``` sh compile_op.sh ```
