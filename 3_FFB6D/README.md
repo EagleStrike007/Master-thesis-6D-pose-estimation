@@ -38,7 +38,7 @@ For convenience, a new folder was created in the home directory of Ubuntu. This 
  ## 4. Installation of CUDA 
 FFB6D makes use of the CUDA tools and libraries, therefore the used system needs to be equipped with a NVIDIA graphics card. Before starting the installation of CUDA, it should be checked which version of CUDA your system supports. This can be done by entering ``` nvidia-smi ``` in the terminal. This should yield an output that looks like the figure below. 
 
-
+<img src="images/nvidia_output.PNG" width="500"> 
 
 # Usage
 
