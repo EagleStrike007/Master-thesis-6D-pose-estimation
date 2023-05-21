@@ -6,6 +6,7 @@ This thesis was written to graduate from the joint program Industrial Engineerin
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <img src="images/ACRO.png" width="250">
 </p>
+The full text of the thesis can be found [TO BE ADDED].
 
 # Abstract
 6D Object pose estimation is applied in a variety of applications such as robotic manipulation, augmented reality and Human-Robot Collaboration (HRC). Recently, machine learning techniques such as neural networks have shown to be effective for the task of 6D pose estimation. These neural networks need much training data. Even more, these approaches often use real data as (part of) their training set. Because generating accurateand labelled real data is a hard and time-consuming process, synthetic data can be used to quickly generate data.
