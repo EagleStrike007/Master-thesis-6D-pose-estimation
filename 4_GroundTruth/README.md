@@ -63,26 +63,25 @@ In addition, the user can still process the images himself.
 The controls for both methods are the same. 
 
 ICP algorithm: 
-'a': coarse ICP - 10.0 * voxel_size
-'z': medium ICP - 5.0 * voxel_size
-'e': fine  ICP  - 2.0 * voxel_size
-'r': very fine  - 1.0 * voxel_size
+* 'a': coarse ICP - 10.0 * voxel_size
+* 'z': medium ICP - 5.0 * voxel_size
+* 'e': fine  ICP  - 2.0 * voxel_size
+* 'r': very fine  - 1.0 * voxel_size
 
 Settings:
-'n': next image 
-'p': previous
-'c': Changing the rotation steps from coarse to fine or vice versa 
-     Changing the translation steps from negative to positive or vice versa 
+* 'n': next image 
+* 'p': previous
+* 'c': Changing the rotation steps from coarse to fine or vice versa & the translation steps from negative to positive or vice versa 
 
 Rotation:
-'1' and '4': rotation roll axis
-'2' and '5': rotation pitch axis
-'3' and '6': ratation yaw axis
+* '1' and '4': rotation roll axis
+* '2' and '5': rotation pitch axis
+* '3' and '6': ratation yaw axis
 
 Translation:
-'7': translation x axis  
-'8': translation y axis  
-'9': translation z axis  
+* '7': translation x axis  
+* '8': translation y axis  
+* '9': translation z axis  
 
 In addition, here are two methods for creating mask images. The first method is by projecting the 3D model onto a binary image. 
 This does not take occlusions into account. The second method works the same way but does so in a depth image and 
