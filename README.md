@@ -1,6 +1,6 @@
 # 6D Object Pose Estimation Using Synthetic Training Data and Deep Learning: Evaluation on Real RGBD Data
  
-6D Object pose estimation is applied in a variety of applications such as robotic manipulation, augmented reality and Human-Robot Collaboration (HRC). Recently, machine learning techniques such as neural networks have shown to be effective for the task of 6D pose estimation. These neural networks need much training data. Even more, these approaches often use real data as (part of) their training set. Because generating real accurate, labelled data is a hard and time-consuming process, synthetic data can be used to quickly generate data.
+6D Object pose estimation is applied in a variety of applications such as robotic manipulation, augmented reality and Human-Robot Collaboration (HRC). Recently, machine learning techniques such as neural networks have shown to be effective for the task of 6D pose estimation. These neural networks need much training data. Even more, these approaches often use real data as (part of) their training set. Because generating accurateand labelled real data is a hard and time-consuming process, synthetic data can be used to quickly generate data.
 
 This thesis focuses on the implementation of a 6D pose estimation algorithm which is trained solely on synthetic data and tested on real data. First, an algorithm needs to be selected. Second, some synthetic data generation tools need to be implemented. Third, the chosen algorithm needs to be trained and evaluated on a real dataset.
 
