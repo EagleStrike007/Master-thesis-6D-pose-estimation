@@ -1,8 +1,22 @@
-# Master-thesis
+# 6D Object Pose Estimation Using Synthetic Training Data and Deep Learning: Evaluation on Real RGBD Data
  
- --ABSTACT--
+6D Object pose estimation is applied in a variety of applications such as robotic manipulation, augmented reality and Human-Robot Collaboration (HRC). Recently, machine learning techniques such as neural networks have shown to be effective for the task of 6D pose estimation. These neural networks need much training data. Even more, these approaches often use real data as (part of) their training set. Because generating real accurate, labelled data is a hard and time-consuming process, synthetic data can be used to quickly generate data.
+
+This thesis focuses on the implementation of a 6D pose estimation algorithm which is trained solely on synthetic data and tested on real data. First, an algorithm needs to be selected. Second, some synthetic data generation tools need to be implemented. Third, the chosen algorithm needs to be trained and evaluated on a real dataset.
+
+A suitable algorithm named FFB6D was selected based on HRC specific criteria. To train this algorithm photorealistic rendering software named BlenderProc was used. In addition, a real dataset, including ground truth information was created using markers and/or an ICP algorithm. The algorithm was evaluated on the synthetic and real dataset. Most importantly, the results show that while using a synthetic training dataset, consisting of 80,000 synthetic RGBD images, FFB6D can achieve an accuracy of up to 84% when allowing an error of 2.0 cm on the real dataset.  It can thus be concluded that using BlenderProc is a valid way to train FFB6D for real world applications.
+
+ # Followed method
+The course of the thesis can be divided into 6 major parts: 
+1. search the most promising 6D object pose estimation method through literature study
+2. search and implement suitable synthetic data generation tool(s)
+3. implement the chosen algorithm and verify its working principle
+4. train the selected algorithm on synthetic data for the real object
+5. create a real dataset, of the driller, which includes ground truth information
+6. evaluate the performance of the algorithm on the real dataset
+
+ # Used software
+
  
- # Method
- 
- --korte de methode nodig--
+
  
