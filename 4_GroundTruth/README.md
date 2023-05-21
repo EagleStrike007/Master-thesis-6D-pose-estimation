@@ -38,7 +38,7 @@ The first workflow uses the markers and the ICP algorithm. This involves placing
 5. The final step consists of applying the ICP algorithm to eliminate further errors/deviations. The input of the algorithm is the pose of the objects as was determined earlier. 
 
 <p align="center">
- <img src="images/creation_real_dataset_method_1_example.png" width="300">
+ <img src="images/method_1_example.png" width="300">
 </p>
 
 # Second method
