@@ -74,8 +74,8 @@ The next step is to install PyTorch, this is a library commonly used for applica
 </p>
 
  ## 6. Installation of Additional packages 
- This part of the installation will install most of the needed libraries required to run FFB6D. Execute following commands to install these packages:
- ```
+This part of the installation will install most of the needed libraries required to run FFB6D. Execute following commands to install these packages:
+```
 git clone https://github.com/ethnhe/FFB6D.git
 pip install cython
 pip install scikit-image
@@ -84,6 +84,54 @@ pip3 install -r requirement.txt
 Please note that in order to execute the last command, one should change the activate directory in the terminal to the folder in which the requirement.txt file is located. Furthermore, an updated requirement file is added because the included file with FFB6D is not complete and contained package versions which were not compatible with anaconda.
 
  ## 7. Installation of NVIDIA Apex 
+This step will explain how to install NVIDIA Apex. [Apex](https://github.com/NVIDIA/apex) contains utilities to streamline mixed precision and distributed training in Pytorch.
+
+Apex will be built from source; it is recommended to install the ‘ninja build’ tool to speed up this process. Ninja can be installed by executing ``` sudo apt-get install ninja-build ```.
+
+Execute following commands to build the Apex package:
+```
+git clone https://github.com/NVIDIA/apex
+cd apex
+export TORCH_CUDA_ARCH_LIST="6.1;7.5;8.9;9.0"
+pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+```
+
+Please note that the values in the TORCH_CUDA_ARCH_LIST variable represent the compute complexity that Apex must be built for. The compute complexity depends on what generation of NVIDIA GPU is used. To see what versions are supported by your GPU please refer to https://en.wikipedia.org/wiki/CUDA.
+
+The installation process should conclude by the terminal printing the following text: "Successfully installed apex-0.1".
+
+ ## 8. Installation of NormalSpeed
+This step will explain how to install [NormalSpeed](https://github.com/hfutcgncas/normalSpeed). NormalSpeed is a fast algorithm for computing the normal of a depth image. 
+
+To install normalSpeed some pre-required packages should be installed, namely opencv and pybind11.
+
+  ### 8.1 Installation of OpenCV
+The only working installation method for OpenCV that did not result in problems installing NormalSpeed was to install opencv from source. This process will be described below.
+
+Firstly, make a new directory called test_opencv in the root of FFB6D. This will be the working directory to build OpenCV from source. Next, download and unzip OpenCV by executing the following commands:
+```
+wget https://github.com/opencv/opencv/archive/refs/tags/3.4.16.tar.gz 
+tar -xvf 3.4.16.tar.gz 
+```
+
+Make sure to now remove the original 3.4.16.tar.gz file, as the next download has the same name. Next download and unzip OpenCV_contrib by executing the following commands:
+```
+wget https://github.com/opencv/opencv_contrib/archive/refs/tags/3.4.16.tar.gz
+tar -xvf 3.4.16.tar.gz
+```
+Next, execute the following commands to build OpenCV.
+```
+cd opencv-3.4.16
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local .. -DPYTHON_INCLUDE_DIR=$(python3 -c "import sysconfig; print(sysconfig.get_path('include'))")  \ -DPYTHON_LIBRARY=$(python3 -c "import sysconfig; print(sysconfig.get_config_var('LIBDIR'))")
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.16/modules/ ..
+make -j16 (Note: 16 = amount of logical processors, this depends on the CPU used)
+sudo make install
+```
+  ### 8.2 Installation of NormalSpeed
+
+
 
 # Usage
 
