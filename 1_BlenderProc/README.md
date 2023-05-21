@@ -58,7 +58,7 @@ A total of three BlenderProc scipts were created:
 The output of each script is briefly discuessed below, for more information about BlenderProc's functions see [github](https://github.com/DLR-RM/BlenderProc) or [documentation website](https://dlr-rm.github.io/BlenderProc/). 
 ## Script 1
 This script is the most used and allows rendering random scenes with 4 different camera positions. The image below give the layout of the Graphical User Interface and an example for the RGB, depth and mask images for camera position 4.
-
+<img src="images/GUI_settings_example.png" width="300">
 ## Script 2
 
 ## Script 3
