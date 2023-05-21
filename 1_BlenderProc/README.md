@@ -53,8 +53,8 @@ At this point BlenderProc can be used to generate datasets. Existing datasets ca
 6. Download additional datasets from https://bop.felk.cvut.cz/datasets/. Any dataset works, furthermore it is only necessary to download the base archive and the object models. Make sure to save the downloaded data by using the correct directory structure. The correct structure is given below.<br>
 DATASET_NAME<br>
 ├─ models[_MODELTYPE][_eval]<br>
-&nbsp;&nbsp;&nbsp;&nbsp;─models_info.json<br>
-&nbsp;&nbsp;&nbsp;&nbsp;─ obj_OBJ_ID.ply
+&nbsp;&nbsp;&nbsp;&nbsp;├─models_info.json<br>
+&nbsp;&nbsp;&nbsp;&nbsp;├─ obj_OBJ_ID.ply
 
 ## Setup
 Organize the dataset with object model (.obj or .ply files) in the following way. 
