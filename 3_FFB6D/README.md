@@ -2,9 +2,7 @@ After a literature study around 6D object pose estimation algorithms and challen
 
 # Table of contents 
 1. Installation of FFB6D
-2. Usage
-3. Implementation of Custom object
-4. Training & Results
+2. Overview
 
 # Installation of FFB6D 
 This section will explain how to install FFB6D and all necessary dependencies. The operating system used is Linux Ubuntu version 22.04. The reason for this tutorial is that we found that the github page of [FFB6D](https://github.com/ethnhe/FFB6D) did not explain the installation process thoroughly enough for people with less experience with Ubuntu, CUDA, etc.
