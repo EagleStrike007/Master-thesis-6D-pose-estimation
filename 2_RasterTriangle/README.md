@@ -22,7 +22,7 @@ The last step is setup RasterTriangle with the datasets.
   ```
   ln -s path_to_dataset_root ./<dataset_name>
   ```
-* Download the SUN2012pascalformat dataset via: http://groups.csail.mit.edu/vision/SUN/releases/SUN2012pascalformat.tar.gz 
+* Download the SUN2012pascalformat dataset via this [link](http://groups.csail.mit.edu/vision/SUN/releases/SUN2012pascalformat.tar.gz) 
   Unzip this and link the dataset to the RasterTriangle root via:
   ```
   ln -s path_to_SUN2012pascalformat ./
