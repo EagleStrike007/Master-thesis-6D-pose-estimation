@@ -3,6 +3,7 @@ This thesis was written to graduate from the joint program Industrial Engineerin
 
 <p align="center">
  <img src="images/uhasselt_kuleuven.png" width="600">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <img src="images/ACRO.png" width="300">
 </p>
 
