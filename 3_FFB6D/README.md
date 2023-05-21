@@ -162,6 +162,12 @@ Should entering the last command result in errors, it is suggested to try the fo
 
 The ``` sh compile_op.sh ``` command should run successfully now.
 
+ ## 11. Installation Raster Triangle
+See RasterTriangle folder
+
+ ## 12. Installation of pretrained models
+On the GitHub page regarding FFB6D, pretrained models for the neural network are made available. A download link for the zip file is given on GitHub. This zip-file will contain a pretrained model for each of the 13 models which are used in the preprocessed LineMod dataset. The individual pretrained models should be saved to the following directory: ``` ~/FFB6D/ffb6d/train_log/linemod/<Name of object> ```. 
+ 
 # Usage
 
 <img src="images/FFB6D_structure_overview.PNG" width="500"> 
