@@ -7,6 +7,38 @@ After a literature study around 6D object pose estimation algorithms and challen
 4. Training & Results
 
 # Installation of FFB6D 
+This section will explain how to install FFB6D and all necessary dependencies. The operating system used is Linux Ubuntu version 22.04. The reason for this tutorial is that we found that the github page of [FFB6D](https://github.com/ethnhe/FFB6D) did not explain the installation process thoroughly enough for people with less experience with Ubuntu, CUDA, etc.
+
+ ## 1. Installation Anaconda
+The first step consists of installing anaconda. Anaconda was used to simplify the management of installed packages. The installation process described below is based on this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart).
+
+To install anaconda, execute the following commands in the terminal:
+```
+sudo apt install curl
+cd /tmp
+curl -O https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
+bash Anaconda3-2022.10-Linux-x86_64.sh
+```
+When asked to run ‘conda init’ enter ‘yes’ into the terminal window. Afterwards, reopen the terminal. Anaconda should now be installed.
+
+ ## 2. Creating environment
+This step creates the environment in which python and future packages will be installed. It was found that Python version 3.7.13 was compatible with all the packages to be installed. Execute the following command to create the environment, which we called 'ffb6d'.
+```
+conda create --name ffb6d -c anaconda python=3.7.13
+```
+To activate the environment, execute the following command:
+```
+conda activate ffb6d
+```
+Make sure that when installing future packages, the activated environment is FFB6D.
+
+ ## 3. Create working directory
+For convenience, a new folder was created in the home directory of Ubuntu. This folder was named FFB6D and will be the working directory for the remainder of the installation process. When executing a git clone command, make sure that the active directory is FFB6D.
+
+ ## 4. Installation of CUDA 
+FFB6D makes use of the CUDA tools and libraries, therefore the used system needs to be equipped with a NVIDIA graphics card. Before starting the installation of CUDA, it should be checked which version of CUDA your system supports. This can be done by entering ``` nvidia-smi ``` in the terminal. This should yield an output that looks like the figure below. 
+
+
 
 # Usage
 
