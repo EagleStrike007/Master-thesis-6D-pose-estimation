@@ -70,3 +70,10 @@ The images below give some more examples of the scenes included in these dataset
 </p>
 
 ## Examples dataset 2
+<p align="center">
+ <img src="images/2_0.png" width="300"> <img src="images/2_0d.png" width="300">
+</p>
+<br>
+<p align="center">
+ <img src="images/2_1.png" width="300"> <img src="images/2_1d.png" width="300">
+</p>
