@@ -2,8 +2,8 @@
 
 # Table of contents 
 1. Installation of RasterTriangle 
-2. *Rendered* data
-3. *Fused* data
+2. Rendered data
+3. Fused data
 4. Change to RasterTriangle
 
 # Installation of RasterTriangle
