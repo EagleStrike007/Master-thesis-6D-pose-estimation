@@ -54,8 +54,19 @@ The following image shows an example of an annotated frame using this method.
 Two real datasets were recorded and annotated. The two real datasets are:
 Dataset 1: static images of the driller and distractor objects (occluded + non-occluded scenes), annotated using method 1
 Dataset 2: movie where the driller is moved across the field of view, annotated using method 2
-The images below give some more examples of the images included in these datasets.
+The images below give some more examples of the scenes included in these datasets (RGB with prjected ground truth mask + Depth).
 <br>
 ## Examples Dataset 1
+<p align="center">
+ <img src="images/1_0.png" width="300"> <img src="images/1_0d.png" width="300">
+</p>
+<br>
+<p align="center">
+ <img src="images/1_1.jpg" width="300"> <img src="images/1_1d.png" width="300">
+</p>
+<br>
+<p align="center">
+ <img src="images/1_2.png" width="300"> <img src="images/1_2d.png" width="300">
+</p>
 
 ## Examples dataset 2
