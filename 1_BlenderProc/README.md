@@ -1,8 +1,5 @@
+# BlenderProc
 Training a neural network requires a large amount of data. The chosen algorithm, called FFB6D, uses RGB, depth and mask images as training data. Generating real life images using a camera is a very time-consuming and intensive process. Therefore, it was chosen to generate synthetic data using open-source software, one of these sotware packages is called BlenderProc. BlenderProc is a modular procedural pipeline for generating photorealistic images. These images can be applied for training neural networks. BlenderProc is programmable in Python and built on the open-source rendering software Blender. Furthermore, the BOP toolkit is  used to extend BlenderProc's functionality. For more information, refer to the [BlenderProc github](https://github.com/DLR-RM/BlenderProc).
-
-Examples: script 1 (view 3) - script 2 - script 3
-
-<img src="images/example_1_1.png" width="300"> <img src="images/example_2_1.png" width="300"> <img src="images/example_3_1.png" width="300">
 
 # Table of contents 
 1. Installation of BlenderProc and BOP toolkit 
@@ -58,6 +55,7 @@ A total of three BlenderProc scipts were created:
 The output of each script is briefly discuessed below, for more information about BlenderProc's functions see [github](https://github.com/DLR-RM/BlenderProc) or [documentation website](https://dlr-rm.github.io/BlenderProc/). 
 ## Script 1
 This script is the most used and allows rendering random scenes with 4 different camera positions. The image below give the layout of the Graphical User Interface and an example for the RGB, depth and mask images for camera position 4.
+<br>
 <img src="images/GUI_settings_example.png" width="300">
 ## Script 2
 
