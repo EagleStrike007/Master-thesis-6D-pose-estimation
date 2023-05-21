@@ -30,8 +30,9 @@ Two real datasets were recorded and annotated. The two real datasets are:
 <br>Dataset 2: movie where the driller is moved across the field of view
 
 FFB6D was trained on 80,000 BlenderProc training images for 15 epochs. The performance of the trained model is given in the table below.
-
-
+<p align="center">
+ <img src="images/Table results.jpg" width="300"> <img src="images/example_2.jpg" width="300">
+</p>
 <p align="center">
  <img src="images/example_1.jpg" width="300"> <img src="images/example_2.jpg" width="300">
 </p>
