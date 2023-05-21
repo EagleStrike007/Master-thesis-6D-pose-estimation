@@ -53,19 +53,19 @@ A total of three BlenderProc scipts were created:
 3. BOP_new_surface_sampling.py: Script for rendering objects projected on a simple texture background with a fixed camera 
 
 The output of each script is shown below, for more information about BlenderProc's functions see [github](https://github.com/DLR-RM/BlenderProc) or [documentation website](https://dlr-rm.github.io/BlenderProc/). 
-## Script 1
+## Script 1: model.py and GUI.py
 <p align="center">
 <img src="images/GUI_settings_example.png" width="300"> 
 <br>
 <img src="images/RGB_cam_4.png" width="300"> <img src="images/Depth_cam_4.png" width="300"> <img src="images/Mask_cam_4.png" width="300">
 </p>
 
-## Script 2
+## Script 2: BOP_new_object_sampling.py
 <p align="center">
 <img src="images/RGB_script_2.png" width="300"> <img src="images/Depth_script_2.png" width="300"> <img src="images/Mask_script_2.png" width="300">
 </p>
 
-## Script 3
+## Script 3: BOP_new_surface_sampling.py
 <p align="center">
 <img src="images/RGB_script_3.png" width="300"> <img src="images/Depth_script_3.png" width="300"> <img src="images/Mask_script_3.png" width="300">
 </p>
