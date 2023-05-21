@@ -16,9 +16,12 @@ The course of the thesis can be divided into 6 major parts:
 6. evaluate the performance of the algorithm on the real dataset
 
  # Used software
-From the literature study followed that the 6D pose estimation algorithm named FFB6D showed promising results. For synthetic data generation, software packages named BlenderProc an RasterTriangle were found. After installing FFB6D, BlenderProc and RasterTriangle, an attempt was made to reproduce the results given by the authors of FFB6D. Once it was validated that FFB6D worked as expected, some custom models were implemented. A synthetic training set was generated, as well as a real test dataset for the custom object. The images in the real dataset were annotated with ground truth information in order to be able to quantify FFB6D’s performance on the real dataset.
+From the literature study followed that the 6D pose estimation algorithm named FFB6D showed promising results. For synthetic data generation, software packages named BlenderProc an RasterTriangle were found. After installing FFB6D, BlenderProc and RasterTriangle, an attempt was made to reproduce the results given by the authors of FFB6D. Once it was validated that FFB6D worked as expected, some custom models were implemented. A synthetic training set was generated, as well as a real test dataset for the custom object. Real images, taken using a RealSense L515 RGBD camera, were annotated with ground truth information in order to be able to quantify FFB6D’s performance on the real dataset.
 
 This repository is split into different folders to provide the most important scripts for each of the used software packages. These subfolders will elaborate on the different packages.
- 
+1. BlenderProc: rendering scripts and example images
+2. RasterTriangle: rendering script and example images
+3. FFB6D: more detailed installation tutorial and most important scripts
+4. Ground truth annotations and RealSense data capture script
 
  
