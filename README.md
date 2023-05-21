@@ -1,5 +1,5 @@
 # 6D Object Pose Estimation Using Synthetic Training Data and Deep Learning: Evaluation on Real RGBD Data
-This thesis was written to graduate from the joint program Industrial Engineering Technology offered by KU Leuven and UHasselt. The thesis was carried out in collaboration with KU Leuven research group ACRO.
+This thesis was written to graduate from the joint program Industrial Engineering Technology offered by KU Leuven and UHasselt. The thesis was carried out in collaboration with KU Leuven research group [ARCO](https://iiw.kuleuven.be/onderzoek/acro).
 # Abstract
 6D Object pose estimation is applied in a variety of applications such as robotic manipulation, augmented reality and Human-Robot Collaboration (HRC). Recently, machine learning techniques such as neural networks have shown to be effective for the task of 6D pose estimation. These neural networks need much training data. Even more, these approaches often use real data as (part of) their training set. Because generating accurateand labelled real data is a hard and time-consuming process, synthetic data can be used to quickly generate data.
 
