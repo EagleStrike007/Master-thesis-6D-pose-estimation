@@ -166,16 +166,15 @@ See RasterTriangle folder
  ## 12. Installation of pretrained models
 On the GitHub page regarding FFB6D, pretrained models for the neural network are made available. A download link for the zip file is given on GitHub. This zip-file will contain a pretrained model for each of the 13 models which are used in the preprocessed LineMod dataset. The individual pretrained models should be saved to the following directory: ``` ~/FFB6D/ffb6d/train_log/linemod/<Name of object> ```. 
  
-# Usage
+# Overview
+The workflow of FFB6D can be divided into two major parts. The first part is the neural network, more specifically, the Full Flow Bidirectional Fusion Network. This neural network is responsible for processing the input to result in RGB and point cloud features. These features are then fed into the second part of the workflow, namely the 3D-keypoint-based 6D pose estimation. The RGB and point cloud features from the neural network are processed with unsupervised machine learning techniques to extract different objects (instance segmentation) and their 6D pose. The two parts are connected by using three headers. The figure below shows the overall structure of FFB6D and thus also for this chapter. The various components of FFB6D are reviewed further in this chapter. First, the neural network is discussed in detail, followed by an explanation of the communication bridges between the 2 subnetworks, which make this network bidirectional. Afterwards, the output of the neural network is discussed, focussed on the three headers. Finally, 3D keypoint extraction is discussed. 
 
-<img src="images/FFB6D_structure_overview.PNG" width="500"> 
+<p align="center">
+ <img src="images/FFB6D_structure_overview.PNG" width="500"> 
+</p>
 
-<img src="images/FFB6D_6D_pose_estimation_overview.PNG" width="500">
+The predicted semantic label and centre point offset of each point in the scene are combined. These are then, for each predicted object in the scene, clustered with a MeanShift clustering algorithm. This clustering algorithm is used to distinguish different object instances. Afterwards, for each instance, each point within the 3D keypoints offset header votes for its target 3D keypoint using the MeanShift algorithm. Finally, a least-squares fitting algorithm is applied to recover the object pose parameters according to the detected 3D keypoints.
 
-<img src="images/FFB6D_example_normalmap_rgb.PNG" width="300"> <img src="images/FFB6D_example_normalmap_n.PNG" width="300">
-
-# Implementation of Custom object
-
-## Dataset arrangement/organization 
-
-# Training & Results
+<p align="center">
+ <img src="images/FFB6D_6D_pose_estimation_overview.PNG" width="500">
+</p>
