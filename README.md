@@ -24,4 +24,9 @@ This repository is split into different folders to provide the most important sc
 3. FFB6D: more detailed installation tutorial and most important scripts
 4. Ground truth annotations and RealSense data capture script
 
+# Results
+
+<img src="images/example_1.png" width="300"> <img src="images/example_2.png" width="300">
+
+<img src="images/example_3.png" width="300"> <img src="images/example_4.png" width="300">
  
