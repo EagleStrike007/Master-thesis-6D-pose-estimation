@@ -62,8 +62,28 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64
 ```
 This concludes the installation of CUDA.
 
+<p align="center">
+ <img src="images/nvidia_output.png" width="500"> 
+</p>
+
  ## 5. Installation of PyTorch 
 The next step is to install PyTorch, this is a library commonly used for applications such as computer vision. It is recommended to use the easy-to-use user interface of the PyTorch website (https://pytorch.org/get-started/locally/) to determine which command must be executed based on the used OS, and package manager. The executed command for the Linux OS using pip at the time being was as follows, see the figure below. 
+
+<p align="center">
+ <img src="images/pytorch_install.png" width="500"> 
+</p>
+
+ ## 6. Installation of Additional packages 
+ This part of the installation will install most of the needed libraries required to run FFB6D. Execute following commands to install these packages:
+ ```
+git clone https://github.com/ethnhe/FFB6D.git
+pip install cython
+pip install scikit-image
+pip3 install -r requirement.txt
+ ```
+Please note that in order to execute the last command, one should change the activate directory in the terminal to the folder in which the requirement.txt file is located. Furthermore, an updated requirement file is added because the included file with FFB6D is not complete and contained package versions which were not compatible with anaconda.
+
+ ## 7. Installation of NVIDIA Apex 
 
 # Usage
 
