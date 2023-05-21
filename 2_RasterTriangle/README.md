@@ -41,7 +41,7 @@ The last step is setup RasterTriangle with the datasets.
 </p>
 
 # Change to RasterTriangle
-The main changes are made in the fused data. For the thesis, the input for making the fused data was changed. Previous, the fused data was created based on real data from the LineMod dataset. Now this is changed to the rendered data form RasterTriangle it self. This implies that Rendered data should first be generated for every object (in the LineMod dataset). Afterwards this rendered data will be used to generate the fused data for the object of interest.
+The main changes are made for generating  fused data. For the thesis, the input for making the fused data was changed. Previously, the fused data was created based on real data from the LineMod dataset. Now this is changed to the rendered data form RasterTriangle itself. This implies that Rendered data should first be generated for every object (that should be included in the fused data). Afterwards this rendered data will be used to generate the fused data for the object of interest.
 
 The figure below shows an example of the creation of the fused data. The input data fot this example is the LineMod dataset. 
 <p align="center">
