@@ -16,7 +16,7 @@ The course of the thesis can be divided into 6 major parts:
 6. evaluate the performance of the algorithm on the real dataset
 
  # Used software
-
+From the literature study followed that the 6D pose estimation algorithm named FFB6D showed promising results. For synthetic data generation, software packages named BlenderProc an RasterTriangle were found. After installing FFB6D, BlenderProc and RasterTriangle, an attempt was made to reproduce the results given by the authors of FFB6D. Once it was validated that FFB6D worked as expected, some custom models were implemented. A synthetic training set was generated, as well as a real test dataset for the custom object. The images in the real dataset were annotated with ground truth information in order to be able to quantify FFB6D’s performance on the real dataset.
  
 
  
