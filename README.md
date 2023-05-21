@@ -38,4 +38,10 @@ FFB6D was trained on 80,000 BlenderProc training images for 15 epochs. The perfo
 <p align="center">
  <img src="images/example_3.jpg" width="300"> <img src="images/example_4.jpg" width="300">
 </p>
+<p align="center">
+ <img src="images/example_5.jpg" width="300"> <img src="images/example_6.jpg" width="300">
+</p>
+<p align="center">
+ <img src="images/example_7.jpg" width="300"> <img src="images/example_8.jpg" width="300">
+</p>
  
