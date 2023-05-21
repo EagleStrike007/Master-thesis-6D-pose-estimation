@@ -51,19 +51,13 @@ DATASET_NAME<br>
 # Usage and different scripts
 As mentioned FFB6D needs RGB, depth and mask images for training. It is possible to generate these using BlenderProc. Therefore, some scenes are programmed containing different objetcs. Since the goal is to use the neural network in a Human-Robot Collaboration setup the scenes are rendered in a specific layout: the camera is stationary and the objects change position. In this way, an environment is recreated where the objects are on the floor of the room. However, other camera positions are also considered to provide the neural network with varying input data.
 A total of three BlenderProc scipts were created: 
-1. Script for rendering 4 different camera views in a cuboid space with stationary camera and moving objects + a Graphical User Interface (GUI) [Most important script ] 
+1. Script for rendering 4 different camera views in a cuboid space with stationary camera and moving objects + a Graphical User Interface
 2. Script for rendering objects in a cuboid space with a moving camera and objects 
 3. Script for rendering objects projected on a simple texture background with a stationary camera 
 
 The output of each script is briefly discuessed below, for more information about BlenderProc's functions see [github](https://github.com/DLR-RM/BlenderProc) or [documentation website](https://dlr-rm.github.io/BlenderProc/). 
-
-<img src="images/example_rgb.png" width="300"> <img src="images/example_depth.png" width="300">
-
-<img src="images/example_mask_1.png" width="300"> <img src="images/example_mask_2.png" width="300">
-
-
-
 ## Script 1
+This script is the most used and allows rendering random scenes with 4 different camera positions. The image below give the layout of the Graphical User Interface and an example for the RGB, depth and mask images for camera position 4.
 
 ## Script 2
 
