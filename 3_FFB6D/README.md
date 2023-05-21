@@ -62,6 +62,8 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64
 ```
 This concludes the installation of CUDA.
 
+ ## 5. Installation of PyTorch 
+The next step is to install PyTorch, this is a library commonly used for applications such as computer vision. It is recommended to use the easy-to-use user interface of the PyTorch website (https://pytorch.org/get-started/locally/) to determine which command must be executed based on the used OS, and package manager. The executed command for the Linux OS using pip at the time being was as follows, see the figure below. 
 
 # Usage
 
