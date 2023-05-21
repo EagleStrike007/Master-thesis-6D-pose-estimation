@@ -17,7 +17,7 @@ Examples: script 1 (view 3) - script 2 - script 3
 4. Scripts + Graphical User Interface
 
 # Installation of BlenderProc and BOP toolkit
-The BlenderProc github already provides a decent tutorial. However, a new one was writen to document the installation in this thesis.
+The BlenderProc github already provides a decent tutorial. However, a new one was writen to document the installation process followed in this thesis. This tutorial describes the installation preces as of 2 October 2022.
 
 1.  Installation of Python (version 3.10 is used in the thesis). This step can be validated by entering the following line in the command prompt: “python”. The command prompt should return the version of the installed Python. 
 2.  Installation of BlenderProc using pip. Therefore the following line should be entered in the command prompt: 
@@ -31,28 +31,30 @@ To verify that BlenderProc installed correctly it is possible to type “blender
 blenderproc quickstart 
 ```
 After following these steps, BlenderProc is installed, but to be able to generate datasets some additional steps are required.
-<br>
-Installation of the bop_toolkit package. To install the “bop_toolkit” package enter the following commands after each other.
+
+4.  To install the bop_toolkit package enter the following commands:
 ```
 git clone https://github.com/thodan/bop_toolkit
 cd bop_toolkit
 pip install -r requirements.txt -e .
 ```
 
-Some datasets require extra textures which can be downloaded by using BlenderProc. 
+5.  To add textured backgrounds to the rendered scene, an texture dataset be downloaded using BlenderProc. 
 Before starting this process, make sure you have 28.6 GB of free drive space.
 To download the textures enter the following command in the command prompt: 
-
+```
 blenderproc download cc_textures <Path_were_folder_should_be_created>
+```
+Pay attention that this command will create a folder at the specified path. Therefore the folder should be named in the path already, without creating it beforehand.
+If an invalid URL error is encountered. Therefore the download_cc_textures.py file had to be updated with an up-to-date URL, being https://ambientcg.com/api/v1/downloads_csv.
 
-Pay attention that this command will create a folder at the specified path. Therefore you should name the folder in the path already without creating it beforehand. If the folder already exists the following error will pop-up: Exception: The folder already exists!
-Another issue was encountered running this command. This error was caused by an invalid URL. Therefore the download_cc_textures.py file had to be updated with an up-to-date URL, being https://ambientcg.com/api/v1/downloads_csv.
+At this point BlenderProc can be used to generate datasets. Existing datasets can be imported in order to use the 3D models that they include. Step 6 describes this proces.
 
-At this point BlenderProc can be used to generate datasets. Existing datasets can be imported in order to use the 3D models that they consist of. Step 6 describes this proces.
-
-
-## Quickstart
-It is possible to test the installation by using BlenderProc's Quickstart. 
+6. Download additional datasets from https://bop.felk.cvut.cz/datasets/. Any dataset works, furthermore it is only necessary to download the base archive and the object models. Make sure to save the downloaded data by using the correct directory structure. The correct structure is given below.<br>
+DATASET_NAME<br>
+├─ models[_MODELTYPE][_eval]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;─models_info.json<br>
+&nbsp;&nbsp;&nbsp;&nbsp;─ obj_OBJ_ID.ply
 
 ## Setup
 Organize the dataset with object model (.obj or .ply files) in the following way. 
