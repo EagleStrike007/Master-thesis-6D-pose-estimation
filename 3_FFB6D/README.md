@@ -61,7 +61,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64
 This concludes the installation of CUDA.
 
 <p align="center">
- <img src="images/nvidia_output.png" width="500"> 
+ <img src="images/NVIDIA_output.png" width="500"> 
 </p>
 
  ## 5. Installation of PyTorch 
