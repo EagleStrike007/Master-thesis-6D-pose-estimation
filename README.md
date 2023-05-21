@@ -2,7 +2,7 @@
 This thesis was written to graduate from the joint program Industrial Engineering Technology offered by KU Leuven and UHasselt. The thesis was carried out in collaboration with KU Leuven research group [ACRO](https://iiw.kuleuven.be/onderzoek/acro).
 
 <p align="center">
- <img src="images/uhasselt_kuleuven.png" width="600">
+ <img src="images/uhasselt_kuleuven.png" width="500">
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <img src="images/ACRO.png" width="250">
 </p>
