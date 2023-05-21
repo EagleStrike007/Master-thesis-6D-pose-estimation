@@ -7,7 +7,27 @@
 4. Change to RasterTriangle
 
 # Installation of RasterTriangle
-
+First install FFB6D. To install Raster Triangle execute the following commands in the root of FFB6D:
+```
+git clone raster triangle --> git clone https://github.com/ethnhe/raster_triangle.git
+```
+and then run to compile the source code:
+```
+cd raster_triangle
+chmod +x ./rastertriangle_so.sh
+./rastertriangle_so.sh
+```
+The last step is setup RasterTriangle with the datasets. 
+* To link RasterTriangle with a dataset (for example the LineMod dataset). This can be done with a symbolic link:
+  ```
+  ln -s path_to_dataset_root ./<dataset_name>
+  ```
+* Download the SUN2012pascalformat dataset via: http://groups.csail.mit.edu/vision/SUN/releases/SUN2012pascalformat.tar.gz 
+  Unzip this and link the dataset to the RasterTriangle root via:
+  ```
+  ln -s path_to_SUN2012pascalformat ./
+  ```
+* Download the sample poses from the [OneDrive](https://hkustconnect-my.sharepoint.com/personal/yhebk_connect_ust_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyhebk%5Fconnect%5Fust%5Fhk%2FDocuments%2Fpublically%20shared%20%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9%2FLineMOD%5Fsyn%5Fsample%5Fpose&ga=1) and move the pickle files to folder ``` sampled_poses/ ``` .
 # *Rendered* data
 
 **Note:** the poses are saved per object in a pkl file. This contains 70,000 poses and this for each object separately. This means that it is possible to generate the same images each time but the number is also limited to the amount in the .pkl-files.
