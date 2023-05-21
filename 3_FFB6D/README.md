@@ -130,8 +130,37 @@ make -j16 (Note: 16 = amount of logical processors, this depends on the CPU used
 sudo make install
 ```
   ### 8.2 Installation of NormalSpeed
+With OpenCV now installed, the NormalSpeed package can be installed. Execute following commands in the root of FFB6D:
+```
+pip3 install "pybind11[global]"
+git clone https://github.com/hfutcgncas/normalSpeed.git
+cd normalSpeed/normalSpeed
+python3 setup.py install –user
+```
+python3 setup.py install –user NormalSpeed should now be installed.
 
+ ## 9. Installation of Tkinter
+Tkinter is a Python library, which is used to create graphical user interfaces (GUIs). This package will be used to visualise the images and the predicted pose resulting from the neural network. To install Tkinter enter following command in the terminal:
+```
+sudo apt install python3-tk
+```
 
+ ## 10. Compilation of RandLA-Net operators
+To compile the RandLa-Net operators, first the directory to the Python site-packages (PYTHONPATH) should be exported. In our case the Python site packages were in the following directory: /home/sander/anaconda3/envs/ffb6d/lib/python3.7/site-packages/
+
+To export the PYTHONPATH enter the following command:
+```
+export PYTHONPATH="/home/sander/anaconda3/envs/ffb6d/lib/python3.7/site-packages/
+```
+Next, change the active directory to the RandLA-directory by entering: ``` cd ffb6d/models/RandLA/ ```
+Next enter the following command to compile the RandLa operators: ``` sh compile_op.sh ```
+
+Should entering the last command result in errors, it is suggested to try the following fixes:
+* Uninstalling enum34: ``` pip uninstall enum34 ```
+* Remove --home=”.” from line 2 in the compile_op.sh file
+* Installing specific version of setuptools: ``` pip install setuptools==58.2.0 ```
+
+The ``` sh compile_op.sh ``` command should run successfully now.
 
 # Usage
 
