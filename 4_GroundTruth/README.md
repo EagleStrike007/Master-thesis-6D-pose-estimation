@@ -25,10 +25,21 @@ The first workflow uses the markers and the ICP algorithm. This involves placing
 
 3. At this point the transformation matrix that describes the pose of the markers with respect to the camera is known, as well as the transformation matrix for the pose of the object relative to the camera. From these matrices the pose of the object relative to the markerboard can be determined.
 
+<p align="center">
+ <img src="images/formula_1.png" width="300">
+</p>
+
 4. Now the camera can be moved freely. The transformation of the object relative to the marker board changes is determined and does not change anymore. By using the calculated transformation matrix, the only matrix that has to be determined for new camera perspectives is the matrix that relates the markers to the camera. Therefore, all images can now be processed using OpenCV. If enough markers are visualized, OpenCV is able to correctly determine the axes of the board. The marker with ID 0 does not necessarily have to be visible when there are enough markers visible with a different ID. If there are too few markers in view, it is not possible to determine the pose of the object with the marker board. For each new image the ground truth pose of the object can be determined by applying formula: 
+
+<p align="center">
+ <img src="images/formula_2.png" width="300">
+</p>
 
 5. The final step consists of applying the ICP algorithm to eliminate further errors/deviations. The input of the algorithm is the pose of the objects as was determined earlier. 
 
+<p align="center">
+ <img src="images/creation_real_dataset_method_1_example.png" width="300">
+</p>
 
 # Second method
 
