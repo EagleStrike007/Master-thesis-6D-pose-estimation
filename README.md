@@ -28,7 +28,8 @@ This repository is split into different folders to provide the most important sc
 
 <p align="center">
  <img src="images/example_1.jpg" width="300"> <img src="images/example_2.jpg" width="300">
-
+</p>
+<p align="center">
  <img src="images/example_3.jpg" width="300"> <img src="images/example_4.jpg" width="300">
- </p>
+</p>
  
