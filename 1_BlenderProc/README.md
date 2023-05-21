@@ -1,10 +1,10 @@
-Training a neural network requires a large amount of data. The chosen algorithm, called FFB6D, uses RGB, depth and mask images as training data. Generating real life images using a camera is a very time-consuming and intensive process. Therefore, it was chosen to generate synthetic data using open-source software, one of these sotware packages is called BlenderProc. BlenderProc is a modular procedural pipeline for generating photorealistic images. These images can be applied for training neural networks. BlenderProc is programmable in Python and built on the open-source rendering software Blender. On top of this, the BOP toolkit is being used to extend BlenderProc to have more functionality. 
+Training a neural network requires a large amount of data. The chosen algorithm, called FFB6D, uses RGB, depth and mask images as training data. Generating real life images using a camera is a very time-consuming and intensive process. Therefore, it was chosen to generate synthetic data using open-source software, one of these sotware packages is called BlenderProc. BlenderProc is a modular procedural pipeline for generating photorealistic images. These images can be applied for training neural networks. BlenderProc is programmable in Python and built on the open-source rendering software Blender. Furthermore, the BOP toolkit is  used to extend BlenderProc's functionality. For more information and an installation guide, refer to the [BlenderProc github](https://github.com/DLR-RM/BlenderProc).
 
-As mentioned FFB6D needs RGB and depth images for training along with mask images. It is possible to generate these via BlenderProc. Therefore, some scenes are generated. Since the goal is to use the neural network in a Human-Robot Collaboration setup the scenes are rendered in a specific layout. The camera is stationary in the scenes and the objects change position. In this process, a type of room is recreated where the objects are on the floor of the room. However, other data is also provided for training so that the neural network can use a sufficient variety of scenes as training data. 
+As mentioned FFB6D needs RGB, depth and mask images for training. It is possible to generate these using BlenderProc. Therefore, some scenes are programmed containing different objetcs. Since the goal is to use the neural network in a Human-Robot Collaboration setup the scenes are rendered in a specific layout: the camera is stationary and the objects change position. In this way, an environment is recreated where the objects are on the floor of the room. However, other camera positions are also considered to provide the neural network with varying input data.
 A total of three BlenderProc scipts were created: 
-1. Script with 4 different views in a boxed space with stationary camera and moving objects + a Graphical User Interface (GUI) implementation [Most important script ] 
-2. Script with objects in a boxed space with a moving camera and moving objects 
-3. Script with "*flying*" objects and a stationary camera 
+1. Script for rendering 4 different camera views in a cuboid space with stationary camera and moving objects + a Graphical User Interface (GUI) [Most important script ] 
+2. Script for rendering objects in a cuboid space with a moving camera and objects 
+3. Script for rendering objects projected on a simple texture background with a stationary camera 
 
 Examples: script 1 (view 3) - script 2 - script 3
 
@@ -17,7 +17,7 @@ Examples: script 1 (view 3) - script 2 - script 3
 4. Scripts + Graphical User Interface
 
 # Installation of BlenderProc and BOP toolkit
-Installation tutorial:
+The BlenderProc github already provides a decent tutorial. However, a new one was writen to document the installation in this thesis.
 
 ## Quickstart
 It is possible to test the installation by using BlenderProc's Quickstart. 
