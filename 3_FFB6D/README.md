@@ -38,7 +38,30 @@ For convenience, a new folder was created in the home directory of Ubuntu. This 
  ## 4. Installation of CUDA 
 FFB6D makes use of the CUDA tools and libraries, therefore the used system needs to be equipped with a NVIDIA graphics card. Before starting the installation of CUDA, it should be checked which version of CUDA your system supports. This can be done by entering ``` nvidia-smi ``` in the terminal. This should yield an output that looks like the figure below. 
 
-<img src="images/nvidia_output.PNG" width="500"> 
+<p align="center">
+ <img src="images/nvidia_output.png" width="500"> 
+</p>
+
+It is suggested to install the latest drivers before continuing the installation process. The latest drivers can be downloaded from https://www.nvidia.com/download/index.aspx.
+
+If running this command results in an error, please verify if the NVIDIA drivers are installed correctly. The NVIDIA drivers can be installed through the software manager in Ubuntu.
+
+In the top right corner of the output, the CUDA version is displayed. For this project CUDA 11.8 was used, which is lower than what the GPU supports. This is not a problem due to CUDA’s backwards compatibility.
+
+To install CUDA, it was chosen to install through a runfile. This way the installer has a graphical UI, which makes the process easier to understand. Execute the following commands ([reference](https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local)) to install CUDA:
+```
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+sudo sh cuda_11.8.0_520.61.05_linux.run
+```
+Make sure to remove the checkbox for the GPU drivers in case any other version of the GPU drivers were already installed.
+
+After the installation is finished, it is suggested in the output of the installer to add a couple of directories to PATH and LD_LIBRARY_PATH. Execute following commands to do so:
+```
+export PATH="/usr/local/cuda-11.8/bin:$PATH"
+export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64
+```
+This concludes the installation of CUDA.
+
 
 # Usage
 
