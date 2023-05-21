@@ -32,15 +32,15 @@ Two real datasets were recorded and annotated. The two real datasets are:
 FFB6D was trained on 80,000 BlenderProc training images for 15 epochs. The performance of the trained model is given in the table below.
 <p align="center">
  <img src="images/table_results.png" width="600">
-The images below show some examples of scenes in dataset 1, with projected mask to visualise the predicted pose.
 </p>
+<br>The images below show some examples of scenes in dataset 1, with projected mask to visualise the predicted pose.<br>
 <p align="center">
  <img src="images/example_1.jpg" width="300"> <img src="images/example_2.jpg" width="300">
 </p>
 <p align="center">
  <img src="images/example_3.jpg" width="300"> <img src="images/example_4.jpg" width="300">
 </p>
-The images below show some examples of scenes in dataset 2, with projected mask to visualise the predicted pose.
+The images below show some examples of scenes in dataset 2, with projected mask to visualise the predicted pose.<br>
 <p align="center">
  <img src="images/example_5.jpg" width="300"> <img src="images/example_6.jpg" width="300">
 </p>
