@@ -37,7 +37,7 @@ For convenience, a new folder was created in the home directory of Ubuntu. This 
 FFB6D makes use of the CUDA tools and libraries, therefore the used system needs to be equipped with a NVIDIA graphics card. Before starting the installation of CUDA, it should be checked which version of CUDA your system supports. This can be done by entering ``` nvidia-smi ``` in the terminal. This should yield an output that looks like the figure below. 
 
 <p align="center">
- <img src="images/nvidia_output.png" width="500"> 
+ <img src="images/NVIDIA_output.png" width="500"> 
 </p>
 
 It is suggested to install the latest drivers before continuing the installation process. The latest drivers can be downloaded from https://www.nvidia.com/download/index.aspx.
@@ -60,9 +60,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64
 ```
 This concludes the installation of CUDA.
 
-<p align="center">
- <img src="images/NVIDIA_output.png" width="500"> 
-</p>
+
 
  ## 5. Installation of PyTorch 
 The next step is to install PyTorch, this is a library commonly used for applications such as computer vision. It is recommended to use the easy-to-use user interface of the PyTorch website (https://pytorch.org/get-started/locally/) to determine which command must be executed based on the used OS, and package manager. The executed command for the Linux OS using pip at the time being was as follows, see the figure below. 
