@@ -88,9 +88,9 @@ This does not take occlusions into account. The second method works the same way
 reads in the actual depth image. When the distance between the two depth images is less than a certain threshold the object is visible.  
 
 # Result
-Two real datasets were recorded and annotated. The two real datasets are:
-Dataset 1: static images of the driller and distractor objects (occluded + non-occluded scenes), annotated using method 1
-Dataset 2: movie where the driller is moved across the field of view, annotated using method 2
+Two real datasets were recorded and annotated. The two real datasets are:<br>
+Dataset 1: static images of the driller and distractor objects (occluded + non-occluded scenes), annotated using method 1<br>
+Dataset 2: movie where the driller is moved across the field of view, annotated using method 2<br>
 The images below give some more examples of the scenes included in these datasets (RGB with prjected ground truth mask + Depth).
 <br>
 ## Examples Dataset 1
